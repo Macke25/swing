@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: new Gson().toJson(objectToConvert);:GSon:unknown">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/new Gson()/toJson(objectToConvert);/GSon/unknown/GSon-unknown.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/new Gson()/toJson(objectToConvert);/GSon/unknown/GSon-unknown-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/new Gson()/toJson(objectToConvert);/GSon/unknown/GSon-unknown-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
