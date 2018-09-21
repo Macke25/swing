@@ -4,7 +4,8 @@ public class Main {
 
     public static void main(String[] args) {
 
-        BookListWindow ListWindow = new BookListWindow("title");
+        BookListWindow bookListWindow = new BookListWindow("title");
+        bookListWindow.getBookList();
 
 
 

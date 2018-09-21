@@ -1,13 +1,12 @@
 package authorController;
 
-import listModel.AuthorListModel;
+//import listModel.AuthorListModel;
 import model.Author;
 import service.AuthorFileService;
 
 import javax.swing.*;
 import javax.swing.event.ListSelectionListener;
 import java.awt.*;
-import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.List;
 public class AuthorListWindow extends GridBagWindow {
@@ -15,7 +14,7 @@ public class AuthorListWindow extends GridBagWindow {
     private JList<Author> authorList = new JList<>();
 //    private DefaultListModel<Author> authorListModel = new DefaultListModel<>();
     private JButton addAuthorButton = new JButton("Add autor");
-    private AuthorListModel authorListModel = new AuthorListModel();
+//    private AuthorListModel authorListModel = new AuthorListModel();
     private AddAuthorWindow addAuthrWindow = new AddAuthorWindow("");
     public Author getSelectedAuthor() {
         return authorList.getSelectedValue();
@@ -31,15 +30,15 @@ public class AuthorListWindow extends GridBagWindow {
         setSize(300, 300);
         add(addAuthorButton, createGbc(0, 0));
         addAuthorButton.addActionListener(e -> addAuthrWindow.setVisible(true));
-        addAuthrWindow.addButtonActionListener(new AddAuthorActionListener(authorListModel, addAuthrWindow), actionListener);
-        authorList.setModel(authorListModel);
+//        addAuthrWindow.addButtonActionListener(new AddAuthorActionListener(authorListModel, addAuthrWindow), actionListener);
+//        authorList.setModel(authorListModel);
         loadData();
     }
     public void loadData(){
         AuthorFileService authorFileService = new AuthorFileService();
         List<Author> authors = authorFileService.loadAuthors();
         for (Author author : authors) {
-            authorListModel.addElement(author);
+//            authorListModel.addElement(author);
         }
     }
 }
