@@ -35,10 +35,11 @@ public class AuthorListWindow extends GridBagWindow {
         loadData();
     }
     public void loadData(){
+        Author author = new Author();
         AuthorFileService authorFileService = new AuthorFileService();
         List<Author> authors = authorFileService.loadAuthors();
-        for (Author author : authors) {
-//            authorListModel.addElement(author);
+
+        DefaultComboBoxModel<Author> authorListModel = null;
+        authorListModel.addElement(author);
         }
     }
-}
