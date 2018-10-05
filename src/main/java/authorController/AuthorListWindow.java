@@ -12,7 +12,8 @@ import java.util.List;
 public class AuthorListWindow extends GridBagWindow {
     public static final String AUTHOR_LIST_WINDOW_TITLE = "Author List";
     private JList<Author> authorList = new JList<>();
-//    private DefaultListModel<Author> authorListModel = new DefaultListModel<>();
+    private DefaultListModel<Author> authorListModel = new DefaultListModel<>();
+
     private JButton addAuthorButton = new JButton("Add autor");
 //    private AuthorListModel authorListModel = new AuthorListModel();
     private AddAuthorWindow addAuthrWindow = new AddAuthorWindow("");
@@ -34,7 +35,7 @@ public class AuthorListWindow extends GridBagWindow {
 //        authorList.setModel(authorListModel);
         loadData();
     }
-    public void loadData(){
+    public void loadData (){
         Author author = new Author();
         AuthorFileService authorFileService = new AuthorFileService();
         List<Author> authors = authorFileService.loadAuthors();
