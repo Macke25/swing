@@ -16,6 +16,10 @@ public class BookFileService extends AbstractFileService<BookDto> {
     private List<Book> books;
     private String json;
 
+    public BookFileService() {
+        super(logger);
+    }
+
     public void saveBooks(List<Book> books){
         BookDto bookDto = new BookDto();
         bookDto.setBooks(books);

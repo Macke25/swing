@@ -17,6 +17,10 @@ public class AuthorFileService extends AbstractFileService<AuthorDto> {
 
     private List<Book> authors;
 
+    public AuthorFileService() {
+        super(logger);
+    }
+
     public void saveAuthor (List<Author> authors){
 //        unJson()
 

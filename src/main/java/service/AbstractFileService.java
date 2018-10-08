@@ -13,6 +13,10 @@ public abstract class AbstractFileService<T> {
     protected String path;
     private Logger logger;
 
+    protected AbstractFileService(Logger logger) {
+        this.logger = logger;
+    }
+
     public void save(T genericDto){
         try{
             PrintWriter printWriter = new PrintWriter(this.path);
