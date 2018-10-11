@@ -48,4 +48,12 @@ public class AddBookWindow extends GridBagWindow {
     public void showAlert(String message) {
         JOptionPane.showMessageDialog(this, message);
     }
+
+    @Override
+    protected GridBagConstraints centerInLine(int y, int lineLength) {
+        for (int i=0; i<y; i++){
+            return super.centerInLine(y+i, lineLength);
+        }
+        return super.centerInLine(y, lineLength);
+    }
 }
