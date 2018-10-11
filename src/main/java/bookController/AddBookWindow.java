@@ -45,7 +45,7 @@ public class AddBookWindow extends GridBagWindow {
     public void addButtonActionListener(ActionListener actionListener) {
         addBookButton.addActionListener(actionListener);
     }
-    public void showAlert(String message) {
+    void showAlert(String message) {
         JOptionPane.showMessageDialog(this, message);
     }
 
