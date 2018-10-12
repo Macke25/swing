@@ -40,7 +40,7 @@ public class BookListWindow extends GridBagWindow {
 
 
 
-    private void saveBooks() {
+    protected void saveBooks() {
         BookDto bookDTO = new BookDto();
         for (int i = 0; i < bookListModel.size(); i++) {
             bookDTO.getBooks().add(bookListModel.get(i));
