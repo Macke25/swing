@@ -66,6 +66,7 @@ public abstract class GridBagWindow extends JFrame {
 
         gridBagConstraints.insets = new Insets(5, 0, 15, 0);
 
+        
         return gridBagConstraints;
 
     }
