@@ -9,6 +9,7 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.logging.Logger;
 
 
 public class BookFileService extends AbstractFileService<BookDto> {
@@ -17,7 +18,8 @@ public class BookFileService extends AbstractFileService<BookDto> {
     private String json;
 
     public BookFileService() {
-        super(logger);
+        super(Logger.getAnonymousLogger());
+
     }
 
     public void saveBooks(List<Book> books){
